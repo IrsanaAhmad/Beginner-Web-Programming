@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    padding: 10px;
+    color: white;
+    background-color: #35155d;
+    text-align: center;
+    font-weight: bold;
+}
+
+header.navbar-container{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1rem;
+    z-index: 999;
+    background-color: white;
+
+    position: sticky;
+    top: 0;
+}
+
+header.navbar-container .logo img{
+    width: 150px;
+}
+
+header.navbar-container .nav-list ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li{
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a{
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a{
+    background-color: #35155d;
+    color: white;
+}
+
+main{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main .content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main .content .content-description{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+main .content .content-description .description{
+    font-size: 1.5rem;
+    margin-block: 1rem;
+}
+
+main .content .content-description .description p{
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+main .content .content-description .description .title {
+    font-size: 2rem;
+}
+
+.button{
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #35155d;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+.button:hover{
+    border: 3px solid #35155d;
+    color: #35155d;
+    background-color: transparent;
+}
+
+main .content .content-image{
+    flex: 1;
+    display: flex;
+}
+
+main .content .content-image img{
+    margin: auto;
+    min-width: 350px;
+    width: 400px;
+}
+
+main .content .content-article{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#mobile-legend{
+    background-color: #512B81;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    gap: 2rem;
+}
+
+#mobile-legend img{
+    height: 200px;
+    width: 250px;
+}
+
+#valorant{
+    background-color: #512B81;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    gap: 2rem;
+}
+
+#valorant img{
+    height: 200px;
+    width: 200px;
+}
+
+
+#dota{
+    background-color: #512B81;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    gap: 2rem;
+}
+
+#dota img{
+    height: 200px;
+    width: 200px;
+}
+
+main aside{
+    display: flex;
+    justify-content: center;
+}
+
+#profile-card{
+    box-shadow: 3px 3px 2px 3px #35155d;
+    border-radius: 5px;
+    background-color: #512B81;
+    color: white;
+
+    padding: 20px;
+}
+
+#profile-card header{
+    text-align: center;
+}
+
+#profile-card section{
+    text-align: left;
+}
+
+aside img{
+    width: 100px;
+}
+
+@media screen and (max-width: 768px){
+    header.navbar-container{
+        flex-direction: column;
+    }
+
+    header.navbar-container .nav-list ul{
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main .content .content-description{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .content .content-description .description{
+        padding-left: 30px;
+    }
+
+    main .content .content-description .description .title{
+        font-size: 2rem;
+    }
+
+    main .content .content-description .description p{
+        font-size: 1rem;
+    }
+
+    main .content .content-description .content-image{
+        order: -1;
+    }
+
+    main .content .content-article #mobile-legend, #valorant, #dota{
+        flex-direction: column;
+    }
+
+    main .content .content-article #valorant img{
+        order: -1;
+    }
+}

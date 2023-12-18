@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esports Competition</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar-container">
+        <div class="logo">
+            <img src="img/logo.png" alt="logoweb">
+        </div>
+        <nav class="nav-list">
+            <ul>
+                <li><a onclick="scrollToSection('home')">Home</a></li>
+                <li><a onclick="scrollToSection('article')">Events</a></li>
+                <li><a onclick="alert('Hai, Saya Irsana')">About</a></li>
+                <li><a onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main>
+        <div class="content" id="home">
+            <div class="content-description">
+                <div class="content-image">
+                    <img src="img/gamers.png" alt="gamers">
+                </div>
+                <div class="description">
+                    <h1 class="title">Esports Competition</h1>
+                    <p>Platform yang menyediakan berbagai esport kompetisi dari berbagai cabang game seperti Mobile Legends, PUBG, Valorant, Dota2, dll.</p>
+                
+                    <button class="button">More Info</button>
+                </div>
+            </div>
+
+            <div class="content-article" id="article">
+                <article id="mobile-legend" class="card">
+                    <img src="img/mobile-legends.png" alt="mobile-legend">
+                    <div>
+                        <h2>Mobile Legend</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, aliquid quasi optio repudiandae officia maxime cumque blanditiis ipsum, odio dignissimos sunt necessitatibus error dolores incidunt unde inventore nulla reiciendis nam! Ipsum tenetur doloremque corporis rerum?</p>
+                        <button class="button">REGISTER</button>
+                    </div>
+                </article>
+
+                <article id="valorant">
+                    <div>
+                        <h2>Valorant</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minima et aperiam nihil soluta consectetur quisquam quae repellat. Reiciendis praesentium et modi ea illum molestias mollitia ducimus tenetur. Id quo illo sapiente quae, similique neque.</p>
+                        <button class="button">REGISTER</button>
+                    </div>
+                    <img src="img/valorant.png" alt="valorant">
+                </article>
+
+                <article id="dota">
+                    <img src="img/dota2.png" alt="dota2">
+                    <div>
+                        <h2>Dota 2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas officiis cum cupiditate impedit nulla doloremque perspiciatis molestias tenetur hic. Mollitia distinctio consequatur voluptate perferendis temporibus. Recusandae amet debitis dignissimos illo, odio maxime deserunt at ea!</p>
+                        <button class="button">REGISTER</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <aside id="contact">
+            <article id="profile-card">
+                <header>
+                    <h2>Irsana Ahmad</h2>
+                    <p>Web Developer</p>
+                    <figure>
+                        <img src="img/profile.jpeg" alt="fotoprofile">
+                    </figure>
+                </header>
+
+                <section>
+                    <table>
+                        <tr>
+                            <th>Alamat</th>
+                            <td>Kabupaten Bogor</td>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <td>Mahasiswa</td>
+                        </tr>
+                        <tr>
+                            <th>Universitas</th>
+                            <td>UHAMKA</td>
+                        </tr>
+                        <tr>
+                            <th>WA</th>
+                            <td>081212216552</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Esports Competition &#169; 2023, Irsana Ahmad</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+ 
